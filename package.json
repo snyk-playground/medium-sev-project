@@ -9,7 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "ejs": "^1.0.0",
     "mosca": "^2.7.0"
   }
 }

@@ -38,14 +38,6 @@ jobs:
           command:
             snyk monitor --org=snyk-playground
 
-      # Always generate HTML report of Snyk test results
-      - run:
-          name: Generate Snyk Test Results HTML Report
-          command: snyk-to-html -i snyk_results.json -o snyk_results.html
-          when: always
-
-      - store_artifacts:
-          path: snyk_results.html
 
 workflows:
   version: 2
