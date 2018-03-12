@@ -30,8 +30,7 @@ jobs:
       - run:
           name: "Snyk Test breaking on high sev"
           command: |
-            set +o pipefail
-            snyk test --json | tee snyk_results.json | jq '[(.vulnerabilities[].severity == "high")]' | jq -e 'if(any) then false else "No high severity vulns found" end'
+            snyk test --severity-threshold=high
 
       # Snyk Monitor if snyk test passes (snyk test by default fails if any vulnerabilities are detected)
       - run:
