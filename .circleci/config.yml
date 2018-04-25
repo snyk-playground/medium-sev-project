@@ -40,6 +40,9 @@ jobs:
           command: snyk-to-html -i snyk_results.json -o snyk_results.html
           when: always
 
+      - store_artifacts:
+          path: snyk_results.html
+
 
 
 workflows:
