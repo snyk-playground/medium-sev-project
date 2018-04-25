@@ -26,7 +26,7 @@ jobs:
       - run:
           name: "Snyk Test breaking on high sev"
           command: |
-            snyk test --org=snyk-playground --json --severity-threshold=high
+            snyk test --org=snyk-playground --json --severity-threshold=high > snyk_results.json
 
       # Snyk Monitor if snyk test passes (snyk test by default fails if any vulnerabilities are detected)
       - run:

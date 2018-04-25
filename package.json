@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "github-release-cli": "^0.3.0",
     "mosca": "^2.7.0"
   }
 }
