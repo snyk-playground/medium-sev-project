@@ -1,0 +1,10 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.13.1
+ignore: {}
+# patches apply the minimum changes required to fix a vulnerability
+patch:
+  'npm:lodash:20180130':
+    - mosca > ioredis > lodash:
+        patched: '2018-12-05T03:34:21.833Z'
+    - mosca > ascoltatori > kafka-node > lodash:
+        patched: '2018-12-05T03:34:21.833Z'
