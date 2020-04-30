@@ -4,12 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "github-release-cli": "^0.3.0",
-    "mosca": "^2.7.0"
-  }
+    "mosca": "^2.7.0",
+    "snyk": "^1.316.1"
+  },
+  "snyk": true
 }
